@@ -25,3 +25,8 @@
 
 #include <pthread.h>
 #include <stdbool.h>
+
+int main(void){
+
+	// ledscape_init(150);
+}
