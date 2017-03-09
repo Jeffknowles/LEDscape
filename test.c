@@ -19,7 +19,7 @@
 #include <sys/mman.h>
 #include "util.h"
 #include "ledscape.h"
-
+#include "ledscape.c"
 #include "lib/cesanta/net_skeleton.h"
 #include "lib/cesanta/frozen.h"
 
