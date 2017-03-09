@@ -142,27 +142,27 @@ ledscape_t * ledscape_init_with_programs(
 	const char* pru1_program_filename
 )
 {
-	pru_t * const pru0 = pru_init(0);
+	// pru_t * const pru0 = pru_init(0);
 	pru_t * const pru1 = pru_init(1);
 
 	const size_t frame_size = num_pixels * LEDSCAPE_NUM_STRIPS * 4;
 
-	if (2*frame_size > pru0->ddr_size)
-		die("Pixel data needs at least 2 * %zu, only %zu in DDR\n",
-			frame_size,
-			pru0->ddr_size
-		);
+	// if (2*frame_size > pru0->ddr_size)
+	// 	die("Pixel data needs at least 2 * %zu, only %zu in DDR\n",
+	// 		frame_size,
+	// 		pru0->ddr_size
+	// 	);
 
 	ledscape_t * const leds = calloc(1, sizeof(*leds));
 
 	*leds = (ledscape_t) {
-		.pru0		= pru0,
+		.pru0		= NULL,
 		.pru1		= pru1,
 		.num_pixels	= num_pixels,
 		.frame_size	= frame_size,
 		.pru0_program_filename  = pru0_program_filename,
 		.pru1_program_filename  = pru1_program_filename,
-		.ws281x_0	= pru0->data_ram,
+		.ws281x_0	= NULL
 		.ws281x_1	= pru1->data_ram
 	};
 
