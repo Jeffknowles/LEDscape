@@ -162,7 +162,7 @@ ledscape_t * ledscape_init_with_programs(
 		.frame_size	= frame_size,
 		.pru0_program_filename  = pru0_program_filename,
 		.pru1_program_filename  = pru1_program_filename,
-		.ws281x_0	= NULL
+		.ws281x_0	= NULL,
 		.ws281x_1	= pru1->data_ram
 	};
 
