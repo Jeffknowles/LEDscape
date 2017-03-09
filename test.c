@@ -1,5 +1,5 @@
-#include "ledscape.c"
-#include "ledscape.h"
+// #include "ledscape.c"
+#include "ledscape.o"
 
 int main(void){
 
