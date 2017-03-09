@@ -123,7 +123,7 @@ ledscape_wait(
 		// 	leds->ws281x_1->command, leds->ws281x_1->response
 		// );
 
-		if (leds->ws281x_0->response && leds->ws281x_1->response) return;
+		if (leds->ws281x_1->response) return;
 	}
 }
 
