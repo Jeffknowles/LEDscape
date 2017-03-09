@@ -1,4 +1,4 @@
-#include "ledscape.h"
+#include "ledscape.c"
 
 
 int main(void){
