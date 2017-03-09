@@ -171,7 +171,7 @@ l_word_loop:
 
 	// The RGB streams have been clocked out
 	// Move to the next pixel on each row
-	ADD r_data_addr, r_data_addr, 48 * 4
+	ADD r_data_addr, r_data_addr, 1 * 4
 	DECREMENT r_data_len
 	QBNE l_word_loop, r_data_len, #0
 
