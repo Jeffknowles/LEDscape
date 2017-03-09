@@ -106,9 +106,6 @@ ledscape.service: ledscape.service.in
 
 .PHONY: clean
 
-test.c:
-
-
 clean:
 	rm -rf \
 		*.o \
