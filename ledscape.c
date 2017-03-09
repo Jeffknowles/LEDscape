@@ -184,13 +184,13 @@ ledscape_t * ledscape_init_with_programs(
 		pru_gpio(3, gpios3[i], 1, 0);
 
 	// Initiate the PRU0 program
-	pru_exec(pru0, pru0_program_filename);
+	// pru_exec(pru0, pru0_program_filename);
 
 	// Watch for a done response that indicates a proper startup
 	// \todo timeout if it fails
-	fprintf(stdout, "String PRU0 with %s... ", pru0_program_filename);
-	while (!leds->ws281x_0->response);
-	printf("OK\n");
+	// fprintf(stdout, "String PRU0 with %s... ", pru0_program_filename);
+	// while (!leds->ws281x_0->response);
+	// printf("OK\n");
 
 
 	// Initiate the PRU1 program
