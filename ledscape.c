@@ -316,6 +316,6 @@ ledscape_close(
 	// Signal a halt command
 	leds->ws281x_0->command = 0xFF;
 	leds->ws281x_1->command = 0xFF;
-	pru_close(leds->pru0);
+	// pru_close(leds->pru0);
 	pru_close(leds->pru1);
 }
