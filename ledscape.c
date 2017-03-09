@@ -101,7 +101,7 @@ ledscape_draw(
 	leds->ws281x_0->response = leds->ws281x_1->response = 0;
 
 	// Send the start command
-	leds->ws281x_0->command = 1;
+	// leds->ws281x_0->command = 1;
 	leds->ws281x_1->command = 1;
 }
 
