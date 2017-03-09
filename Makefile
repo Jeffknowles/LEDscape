@@ -4,7 +4,7 @@
 #
 TARGETS += opc-server
 
-LEDSCAPE_OBJS = ledscape.o pru.o util.o lib/cesanta/frozen.o lib/cesanta/mongoose.o
+LEDSCAPE_OBJS = ledscape.o pru.o util.o lib/cesanta/frozen.o lib/cesanta/mongoose.o test.c
 LEDSCAPE_LIB := libledscape.a
 
 PRU_TEMPLATES := $(wildcard pru/templates/*.p)
@@ -105,6 +105,9 @@ ledscape.service: ledscape.service.in
 	sed 's%LEDSCAPE_PATH%'`pwd`'%' ledscape.service.in > ledscape.service
 
 .PHONY: clean
+
+test.c:
+
 
 clean:
 	rm -rf \
