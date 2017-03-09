@@ -4,7 +4,7 @@
 #
 TARGETS += opc-server
 
-LEDSCAPE_OBJS = ledscape.o pru.o util.o lib/cesanta/frozen.o lib/cesanta/mongoose.o test.c
+LEDSCAPE_OBJS = ledscape.o pru.o util.o lib/cesanta/frozen.o lib/cesanta/mongoose.o
 LEDSCAPE_LIB := libledscape.a
 
 PRU_TEMPLATES := $(wildcard pru/templates/*.p)
