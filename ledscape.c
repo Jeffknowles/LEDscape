@@ -9,7 +9,7 @@
 #include <inttypes.h>
 #include <errno.h>
 #include <unistd.h>
- 
+
 #include "ledscape.h"
 
 
@@ -142,7 +142,7 @@ ledscape_t * ledscape_init_with_programs(
 	const char* pru1_program_filename
 )
 {
-	pru_t * const pru0 = pru_init(0);
+	// pru_t * const pru0 = pru_init(0);
 	pru_t * const pru1 = pru_init(1);
 
 	const size_t frame_size = num_pixels * LEDSCAPE_NUM_STRIPS * 4;
