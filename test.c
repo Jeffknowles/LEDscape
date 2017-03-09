@@ -27,6 +27,6 @@
 #include <stdbool.h>
 
 int main(void){
-	ledscape_init(); 
+	ledscape_init(1); 
 	// ledscape_init_with_programs(150); 
 }
