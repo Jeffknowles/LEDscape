@@ -16,7 +16,7 @@
  * Changing this also requires changes in ws281x.p to stride the
  * correct number of bytes per row..
  */
-#define LEDSCAPE_NUM_STRIPS 48
+#define LEDSCAPE_NUM_STRIPS 41
 
 
 /**
