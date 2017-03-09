@@ -91,7 +91,7 @@ ledscape_draw(
 )
 {
 
-	leds->ws281x_0->pixels_dma = leds->pru0->ddr_addr + leds->frame_size * frame;
+	// leds->ws281x_0->pixels_dma = leds->pru0->ddr_addr + leds->frame_size * frame;
 	leds->ws281x_1->pixels_dma = leds->pru0->ddr_addr + leds->frame_size * frame;
 
 	// Wait for any current command to have been acknowledged
